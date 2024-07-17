@@ -1,40 +1,58 @@
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;;
     margin: 0;
     padding: 0;
-    background: rgb(0,0,0);
+    background: rgb(255, 0, 200);
 }
 
+#gameBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/table-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px); /* Add blur effect */
+    z-index: -1;
+}
 #myCanvas {
     margin-top: 150px;
     /* border: 1px solid rgb(179, 13, 13); */
 }
 #player1 {
-    position: absolute;
+    /* position: absolute;
     top : 10px;
-    left: 35%;
+    left: 35%; */
     color: white;   
     font-size: 200px;
     /* border: 1px solid rgb(179, 13, 13); */
-    padding: 0px;
 }
 
 #player2 {
     /* border: 1px solid rgb(19, 13, 179); */
-    position: absolute; ; 
+    /* position: absolute; ; 
     top : 10px; 
-    left: 60%;
+    left: 60%; */
     font-size: 200px;
     color: white;
     /* background: rgb(0, 0, 226); */
 }
 #dash {
-    position: absolute;
+    /* position: absolute;
     top: 10px;
-    left: 48%;
+    left: 48%; */
+    padding: 200px;
     color: white;
     font-size: 200px;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    background-color: black;
 }

@@ -15,13 +15,13 @@ let player2ScoreElement = document.getElementById("player2");
 
 
 function startRound(paddle1, paddle2, ball) {
+  // Reset the positions of the paddles and the ball
   paddle1.y = canvas.height / 2 - paddle1.height / 2;
   paddle2.y = canvas.height / 2 - paddle2.height / 2;
   ball.x = canvas.width / 2 - ball.width / 2;
   ball.y = canvas.height / 2 - ball.height / 2;
 
 }
-
 class Paddle {
   constructor(x, y, src) {
     this.x = x;
@@ -55,7 +55,7 @@ class Ball {
     this.src = src;
     this.dx = 1;
     this.dy = 1;
-    this.speed = 7;
+    this.speed = 6;
   }
 
   draw(ctx) {
@@ -180,7 +180,7 @@ function update() {
   paddle1.draw(ctx);
   paddle2.move();
   paddle2.draw(ctx);
-  ball.move();
+  // ball.move();w
   ball.draw(ctx);
   requestAnimationFrame(update);
 }
