@@ -7,3 +7,34 @@ body {
     padding: 0;
     background: rgb(0,0,0);
 }
+
+#myCanvas {
+    margin-top: 150px;
+    /* border: 1px solid rgb(179, 13, 13); */
+}
+#player1 {
+    position: absolute;
+    top : 10px;
+    left: 35%;
+    color: white;   
+    font-size: 200px;
+    /* border: 1px solid rgb(179, 13, 13); */
+    padding: 0px;
+}
+
+#player2 {
+    /* border: 1px solid rgb(19, 13, 179); */
+    position: absolute; ; 
+    top : 10px; 
+    left: 60%;
+    font-size: 200px;
+    color: white;
+    /* background: rgb(0, 0, 226); */
+}
+#dash {
+    position: absolute;
+    top: 10px;
+    left: 48%;
+    color: white;
+    font-size: 200px;
+}
