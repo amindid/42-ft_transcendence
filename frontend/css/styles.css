@@ -13,7 +13,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../assets/images/table-bg.png");
+    background-image: url("../assets/images/neon-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,34 +25,43 @@ body {
     /* border: 1px solid rgb(179, 13, 13); */
 }
 #player1 {
-    /* position: absolute;
-    top : 10px;
-    left: 35%; */
-    color: white;   
-    font-size: 200px;
+    position: relative;
+    left: 10%;
+    color: white;
+    top: 50px;   
+    font-size: 100px;
     /* border: 1px solid rgb(179, 13, 13); */
 }
 
 #player2 {
-    /* border: 1px solid rgb(19, 13, 179); */
-    /* position: absolute; ; 
-    top : 10px; 
-    left: 60%; */
-    font-size: 200px;
+    position: relative; 
+    left: 60%;
+    font-size: 100px;
     color: white;
+    top: 50px;
     /* background: rgb(0, 0, 226); */
 }
-#dash {
-    /* position: absolute;
-    top: 10px;
-    left: 48%; */
-    padding: 200px;
+#time {
+    position: relative;
+    color: rgb(207, 10, 207);
+    left: 42%;
+    font-size: 90px;
+}
+
+#timer {
+    position: relative;
+    top: 80px;
+    left: 32%;
     color: white;
-    font-size: 200px;
+    font-size: 80px;
 }
 
 .score {
     position: absolute;
     top: 10px;
-    background-color: black;
+    background: linear-gradient(0deg, #8509be 0%, rgba(5,1,3,1) 100%);
+    border-radius: 30px;
+    width: 70%;
+    top: 30px;
+    height: 150px;
 }

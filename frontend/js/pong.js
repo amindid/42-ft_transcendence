@@ -1,10 +1,33 @@
+
+var designs = {
+  "fire": {
+    "background": "/frontend/assets/images/fire-map.svg",
+    "paddle": "/frontend/assets/images/fire-paddle.svg",
+    "ball": "/frontend/assets/images/fire-ball.svg"
+  },
+  "water": {
+    "background": "/frontend/assets/images/water-map.svg",
+    "paddle": "/frontend/assets/images/water-paddle.svg",
+    "ball": "/frontend/assets/images/water-ball.svg"
+  },
+  "earth": {
+    "background": "/frontend/assets/images/earth-map.svg",
+    "paddle": "/frontend/assets/images/earth-paddle.svg",
+    "ball": "/frontend/assets/images/earth-ball.svg"
+  },
+  "neon": {
+    "background": "/frontend/assets/images/neon-map.svg",
+    "paddle": "/frontend/assets/images/neon-paddle.svg",
+    "ball": "/frontend/assets/images/neon-ball.svg"
+  }
+}
 const coefficient = 0.75;
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth * coefficient;
 canvas.height = window.innerHeight * coefficient;
 let img = new Image();
-img.src = "/frontend/assets/images/glow-table.svg";
+img.src = designs["neon"]["background"];
 img.onload = update;
 
 let player1Score = 0;
@@ -55,7 +78,7 @@ class Ball {
     this.src = src;
     this.dx = 1;
     this.dy = 1;
-    this.speed = 6;
+    this.speed = 8;
   }
 
   draw(ctx) {
@@ -124,9 +147,9 @@ class Ball {
 }
 
 // Load the image once when the script is first run
-let paddle1 = new Paddle(30, canvas.height / 2 - 50, "/frontend/assets/images/neon-paddle.svg");
-let paddle2 = new Paddle(canvas.width - 80, canvas.height / 2 - 50, "/frontend/assets/images/neon-paddle.svg");
-let ball = new Ball((canvas.width / 2) - 30, canvas.height / 2, "/frontend/assets/images/neon-ball.svg");
+let paddle1 = new Paddle(30, canvas.height / 2 - 50, designs["neon"]["paddle"]);
+let paddle2 = new Paddle(canvas.width - 80, canvas.height / 2 - 50, designs["neon"]["paddle"]);
+let ball = new Ball((canvas.width / 2) - 30, canvas.height / 2, designs["neon"]["ball"]);
 
 window.addEventListener('resize', () => {
   console.log("resizing");
@@ -180,7 +203,7 @@ function update() {
   paddle1.draw(ctx);
   paddle2.move();
   paddle2.draw(ctx);
-  // ball.move();w
+  // ball.move();
   ball.draw(ctx);
   requestAnimationFrame(update);
 }
