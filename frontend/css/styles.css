@@ -31,6 +31,7 @@ body {
 }
 
 #gameBackground {
+    position: absolute;
     width: 100%;
     height: 100%;
     /* display: flex; */
@@ -39,11 +40,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     filter: blur(5px); /* Add blur effect */
-    position: absolute;
     z-index: -1;
 }
 #myCanvas {
-    /* margin-top: 150px; */
     /* border: 1px solid rgb(179, 13, 13); */
     width: 80%;
 }
@@ -92,18 +91,22 @@ body {
 
 .score {
     /* position: absolute; */
-    /* top: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, #cb0ccb 30%, rgba(5,1,3,1) 50%);
+    /* background: linear-gradient(90deg, #cb0ccb 30%, rgba(5,1,3,1) 50%);
+     */
+     /* background-image: linear-gradient(to top, #cb0ccb, #a10086, #6f0b4f, #3b1025, #000000);
+      */
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cb60b3+0,000000+50,de47ac+100 */
+        background: linear-gradient(to right,  #cb0ccb 20%,#000000 50%,#cb0ccb 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     border-radius: 30px;
     width: 70%;
     height: 7rem;
-    /* top: 60px; */
-    /* height: 140px; */
-    /* border: 5px solid rgb(156, 24, 24); */
     gap: 10rem;
+    margin-top: 4em;
+    /* border: 1px solid rgb(210, 14, 194); */
+
 }
 #toggleBallMovement{
     /* position: absolute  ; */

@@ -81,8 +81,8 @@
 
     move() {
       this.y += this.dy * this.speed;
-      if (this.y < 40) this.y = 40;
-      if (this.y + this.height > Number(canvas.height) - 40) this.y = Number((canvas.height) - 40) - this.height;
+      if (this.y < 25) this.y = 25;
+      if (this.y + this.height > Number(canvas.height) - 25) this.y = Number((canvas.height) - 25) - this.height;
     }
   }
 
