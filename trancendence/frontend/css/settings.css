@@ -1,0 +1,330 @@
+.div1
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+}
+
+
+setting-component {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+	display: flex;
+}
+
+sound-notificartion
+{
+	width: 100%;
+	height: 8%;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.settings
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* background-color: aqua; */
+}
+
+.settings1
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+	height: 95%;
+	background-color: rgba(80, 0, 93, 1);
+	border-radius: 20px;
+}
+
+.img_
+{
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	width: 100%;
+	height: 20%;
+}
+
+
+.div1_ {
+    position: absolute; /* This positions the div above the other two */
+    top: 27%; /* Move to the middle vertically */
+    left: 50%; /* Move to the middle horizontally */
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px; /* Adjust the size as needed */
+    background-color:  rgba(136, 4, 138, 1); /* Example background color */
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change_profile {
+    position: absolute; /* This positions the div above the other two */
+    top: 30%; /* Move to the middle vertically */
+    left: 54%; /* Move to the middle horizontally */
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px; /* Adjust the size as needed */
+    background-color:  rgba(136, 4, 138, 1); /* Example background color */
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2_
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 280px;
+	height: 280px;
+	background-color:  rgba(0, 220, 255, 1);
+	border-radius: 100%;
+}
+
+.div3_
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid white;
+	width: 240px;
+	height: 240px;
+	background-color:  white;
+	border-radius: 100%;
+}
+
+.div-account-details
+{
+	width: 100%;
+	height: 76%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* border-radius: 20px; */
+	background-color: rgba(80, 0, 93, 1);
+}
+.empty
+{
+	height: 15%;
+	width: 100%;
+}
+.account-details_
+{
+	width: 100%;
+	height: 87%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/* border-radius: 20px; */
+}
+/* @font-face {
+	font-family: 'Bungee_Inline';
+    src: url('../images/Bungee_Inline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+#plyername
+{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	font-family: Bungee_Inline;
+	font-size: 25px;
+	justify-content: center;
+	color: white;
+}
+
+#account-details
+{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+@font-face {
+	font-family: 'MPLUSRounded1c';
+    src: url('../images/MPLUSRounded1c-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#print-account-details
+{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	font-family: MPLUSRounded1c;
+	left: 10%;
+	font-size: 20px;
+	padding-left: 10%;
+	/* color: rgba(191, 195, 205, 1); */
+}
+
+#edit
+{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* background-color: rgb(176, 173, 203); */
+
+	color: white;
+}
+
+#username
+{
+	width: 80%;
+	height: 15%;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction: row;
+	gap: 100px;
+}
+
+#logout_delete
+{
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+	gap: 10px;
+}
+@font-face {
+	font-family: 'MPLUSRounded1c-Bold';
+	src: url('../images/MPLUSRounded1c-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.logout
+{
+	width: 80%;
+	height: 15%;
+	font-family: MPLUSRounded1c-Bold;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	color: white;
+	padding-right: 23%;
+}
+
+.delete
+{
+	width: 100%;
+	height: 15%;
+	font-family: MPLUSRounded1c-Bold;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	padding-right: 10%;
+	color: rgba(255, 0, 0, 1);
+}
+
+
+#edit_username
+{
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#printusername
+{
+	width: 25%;
+	height: 100%;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: MPLUSRounded1c-Bold;
+}
+
+#printemail
+{
+	width: 25%;
+	height: 100%;
+	font-size: 17px;
+	/* padding-right: 5%; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: MPLUSRounded1c-Bold;
+}
+
+
+#edit_data
+{
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.input_username
+{
+	width: 70%;
+	height: 55%;
+	border-radius: 20px;
+	color: white;
+	font-size: 30px;
+	background-color: rgba(228, 0, 205, 1);
+}
+
+input::placeholder 
+{
+	color: white;
+}
+
+#switch
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 15%;
+	height: 15%;
+	background-color: blue;
+	border-radius: 7px;
+}
+
+#click-switch
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
